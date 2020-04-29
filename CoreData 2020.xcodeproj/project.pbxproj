@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0E957824521682001C6A99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E957724521682001C6A99 /* AppDelegate.m */; };
+		8D0E957E24521682001C6A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E957C24521682001C6A99 /* Main.storyboard */; };
+		8D0E958124521682001C6A99 /* CoreData_2020.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E957F24521682001C6A99 /* CoreData_2020.xcdatamodeld */; };
+		8D0E95832452168A001C6A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E95822452168A001C6A99 /* Assets.xcassets */; };
+		8D0E95862452168A001C6A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E95842452168A001C6A99 /* LaunchScreen.storyboard */; };
+		8D0E95892452168A001C6A99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E95882452168A001C6A99 /* main.m */; };
+		8D0E959124559CCB001C6A99 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E959024559CCB001C6A99 /* CoreDataManager.m */; };
+		8D0E95AB2455CB5F001C6A99 /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E95AA2455CB5F001C6A99 /* StudentsTableViewController.m */; };
+		8D0E95AE2456EECA001C6A99 /* StudentInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E95AD2456EECA001C6A99 /* StudentInfoTableViewController.m */; };
+		8D56BF26245709CB000895C8 /* StudentInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D56BF25245709CB000895C8 /* StudentInfoTableViewCell.m */; };
+		8D56BF3824572871000895C8 /* Course+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D56BF3224572871000895C8 /* Course+CoreDataClass.m */; };
+		8D56BF3924572871000895C8 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D56BF3324572871000895C8 /* Course+CoreDataProperties.m */; };
+		8D56BF3A24572871000895C8 /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D56BF3624572871000895C8 /* Student+CoreDataClass.m */; };
+		8D56BF3B24572871000895C8 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D56BF3724572871000895C8 /* Student+CoreDataProperties.m */; };
+		8D56BF3E24572923000895C8 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D56BF3D24572923000895C8 /* CoursesTableViewController.m */; };
+		8DB6F2B024583162000AEC82 /* CourseInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6F2AF24583162000AEC82 /* CourseInfoTableViewController.m */; };
+		8DB6F2B3245833C4000AEC82 /* CourseInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6F2B2245833C4000AEC82 /* CourseInfoTableViewCell.m */; };
+		8DB6F2B62458441F000AEC82 /* CourseStudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6F2B52458441F000AEC82 /* CourseStudentsTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8D0E957324521682001C6A99 /* CoreData 2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData 2020.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0E957624521682001C6A99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D0E957724521682001C6A99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D0E957D24521682001C6A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D0E958024521682001C6A99 /* CoreData_2020.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData_2020.xcdatamodel; sourceTree = "<group>"; };
+		8D0E95822452168A001C6A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D0E95852452168A001C6A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D0E95872452168A001C6A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0E95882452168A001C6A99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D0E958F24559CCB001C6A99 /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		8D0E959024559CCB001C6A99 /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		8D0E95A92455CB5F001C6A99 /* StudentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentsTableViewController.h; sourceTree = "<group>"; };
+		8D0E95AA2455CB5F001C6A99 /* StudentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentsTableViewController.m; sourceTree = "<group>"; };
+		8D0E95AC2456EECA001C6A99 /* StudentInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentInfoTableViewController.h; sourceTree = "<group>"; };
+		8D0E95AD2456EECA001C6A99 /* StudentInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentInfoTableViewController.m; sourceTree = "<group>"; };
+		8D56BF24245709CB000895C8 /* StudentInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentInfoTableViewCell.h; sourceTree = "<group>"; };
+		8D56BF25245709CB000895C8 /* StudentInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentInfoTableViewCell.m; sourceTree = "<group>"; };
+		8D56BF3024572871000895C8 /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8D56BF3124572871000895C8 /* Course+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataClass.h"; sourceTree = "<group>"; };
+		8D56BF3224572871000895C8 /* Course+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataClass.m"; sourceTree = "<group>"; };
+		8D56BF3324572871000895C8 /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8D56BF3424572871000895C8 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8D56BF3524572871000895C8 /* Student+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		8D56BF3624572871000895C8 /* Student+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		8D56BF3724572871000895C8 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8D56BF3C24572923000895C8 /* CoursesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
+		8D56BF3D24572923000895C8 /* CoursesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
+		8DB6F2AE24583162000AEC82 /* CourseInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseInfoTableViewController.h; sourceTree = "<group>"; };
+		8DB6F2AF24583162000AEC82 /* CourseInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseInfoTableViewController.m; sourceTree = "<group>"; };
+		8DB6F2B1245833C4000AEC82 /* CourseInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseInfoTableViewCell.h; sourceTree = "<group>"; };
+		8DB6F2B2245833C4000AEC82 /* CourseInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseInfoTableViewCell.m; sourceTree = "<group>"; };
+		8DB6F2B42458441F000AEC82 /* CourseStudentsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseStudentsTableViewController.h; sourceTree = "<group>"; };
+		8DB6F2B52458441F000AEC82 /* CourseStudentsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseStudentsTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0E957024521682001C6A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D0E956A24521682001C6A99 = {
+			isa = PBXGroup;
+			children = (
+				8D0E957524521682001C6A99 /* CoreData 2020 */,
+				8D0E957424521682001C6A99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D0E957424521682001C6A99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0E957324521682001C6A99 /* CoreData 2020.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D0E957524521682001C6A99 /* CoreData 2020 */ = {
+			isa = PBXGroup;
+			children = (
+				8D56BF23245709A4000895C8 /* Views */,
+				8D0E95922455AE06001C6A99 /* Models */,
+				8D0E95932455AE0E001C6A99 /* Controllers */,
+				8D0E958F24559CCB001C6A99 /* CoreDataManager.h */,
+				8D0E959024559CCB001C6A99 /* CoreDataManager.m */,
+				8D0E957624521682001C6A99 /* AppDelegate.h */,
+				8D0E957724521682001C6A99 /* AppDelegate.m */,
+				8D0E957C24521682001C6A99 /* Main.storyboard */,
+				8D0E957F24521682001C6A99 /* CoreData_2020.xcdatamodeld */,
+				8D0E95822452168A001C6A99 /* Assets.xcassets */,
+				8D0E95842452168A001C6A99 /* LaunchScreen.storyboard */,
+				8D0E95872452168A001C6A99 /* Info.plist */,
+				8D0E95882452168A001C6A99 /* main.m */,
+			);
+			path = "CoreData 2020";
+			sourceTree = "<group>";
+		};
+		8D0E95922455AE06001C6A99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D56BF3124572871000895C8 /* Course+CoreDataClass.h */,
+				8D56BF3224572871000895C8 /* Course+CoreDataClass.m */,
+				8D56BF3024572871000895C8 /* Course+CoreDataProperties.h */,
+				8D56BF3324572871000895C8 /* Course+CoreDataProperties.m */,
+				8D56BF3524572871000895C8 /* Student+CoreDataClass.h */,
+				8D56BF3624572871000895C8 /* Student+CoreDataClass.m */,
+				8D56BF3424572871000895C8 /* Student+CoreDataProperties.h */,
+				8D56BF3724572871000895C8 /* Student+CoreDataProperties.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D0E95932455AE0E001C6A99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D0E95A92455CB5F001C6A99 /* StudentsTableViewController.h */,
+				8D0E95AA2455CB5F001C6A99 /* StudentsTableViewController.m */,
+				8D0E95AC2456EECA001C6A99 /* StudentInfoTableViewController.h */,
+				8D0E95AD2456EECA001C6A99 /* StudentInfoTableViewController.m */,
+				8D56BF3C24572923000895C8 /* CoursesTableViewController.h */,
+				8D56BF3D24572923000895C8 /* CoursesTableViewController.m */,
+				8DB6F2AE24583162000AEC82 /* CourseInfoTableViewController.h */,
+				8DB6F2AF24583162000AEC82 /* CourseInfoTableViewController.m */,
+				8DB6F2B42458441F000AEC82 /* CourseStudentsTableViewController.h */,
+				8DB6F2B52458441F000AEC82 /* CourseStudentsTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D56BF23245709A4000895C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D56BF24245709CB000895C8 /* StudentInfoTableViewCell.h */,
+				8D56BF25245709CB000895C8 /* StudentInfoTableViewCell.m */,
+				8DB6F2B1245833C4000AEC82 /* CourseInfoTableViewCell.h */,
+				8DB6F2B2245833C4000AEC82 /* CourseInfoTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0E957224521682001C6A99 /* CoreData 2020 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0E958C2452168A001C6A99 /* Build configuration list for PBXNativeTarget "CoreData 2020" */;
+			buildPhases = (
+				8D0E956F24521682001C6A99 /* Sources */,
+				8D0E957024521682001C6A99 /* Frameworks */,
+				8D0E957124521682001C6A99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreData 2020";
+			productName = "CoreData 2020";
+			productReference = 8D0E957324521682001C6A99 /* CoreData 2020.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D0E956B24521682001C6A99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Dzmitry Marchanka";
+				TargetAttributes = {
+					8D0E957224521682001C6A99 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 8D0E956E24521682001C6A99 /* Build configuration list for PBXProject "CoreData 2020" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D0E956A24521682001C6A99;
+			productRefGroup = 8D0E957424521682001C6A99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0E957224521682001C6A99 /* CoreData 2020 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0E957124521682001C6A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0E95862452168A001C6A99 /* LaunchScreen.storyboard in Resources */,
+				8D0E95832452168A001C6A99 /* Assets.xcassets in Resources */,
+				8D0E957E24521682001C6A99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0E956F24521682001C6A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB6F2B3245833C4000AEC82 /* CourseInfoTableViewCell.m in Sources */,
+				8D56BF3B24572871000895C8 /* Student+CoreDataProperties.m in Sources */,
+				8D0E958124521682001C6A99 /* CoreData_2020.xcdatamodeld in Sources */,
+				8D0E95AE2456EECA001C6A99 /* StudentInfoTableViewController.m in Sources */,
+				8DB6F2B62458441F000AEC82 /* CourseStudentsTableViewController.m in Sources */,
+				8DB6F2B024583162000AEC82 /* CourseInfoTableViewController.m in Sources */,
+				8D0E95AB2455CB5F001C6A99 /* StudentsTableViewController.m in Sources */,
+				8D56BF3A24572871000895C8 /* Student+CoreDataClass.m in Sources */,
+				8D0E959124559CCB001C6A99 /* CoreDataManager.m in Sources */,
+				8D56BF3E24572923000895C8 /* CoursesTableViewController.m in Sources */,
+				8D56BF26245709CB000895C8 /* StudentInfoTableViewCell.m in Sources */,
+				8D0E95892452168A001C6A99 /* main.m in Sources */,
+				8D56BF3924572871000895C8 /* Course+CoreDataProperties.m in Sources */,
+				8D56BF3824572871000895C8 /* Course+CoreDataClass.m in Sources */,
+				8D0E957824521682001C6A99 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D0E957C24521682001C6A99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D0E957D24521682001C6A99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D0E95842452168A001C6A99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D0E95852452168A001C6A99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D0E958A2452168A001C6A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8D0E958B2452168A001C6A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D0E958D2452168A001C6A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "CoreData 2020/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DM.CoreData-2020";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8D0E958E2452168A001C6A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "CoreData 2020/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DM.CoreData-2020";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D0E956E24521682001C6A99 /* Build configuration list for PBXProject "CoreData 2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0E958A2452168A001C6A99 /* Debug */,
+				8D0E958B2452168A001C6A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0E958C2452168A001C6A99 /* Build configuration list for PBXNativeTarget "CoreData 2020" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0E958D2452168A001C6A99 /* Debug */,
+				8D0E958E2452168A001C6A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D0E957F24521682001C6A99 /* CoreData_2020.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D0E958024521682001C6A99 /* CoreData_2020.xcdatamodel */,
+			);
+			currentVersion = 8D0E958024521682001C6A99 /* CoreData_2020.xcdatamodel */;
+			path = CoreData_2020.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8D0E956B24521682001C6A99 /* Project object */;
+}
