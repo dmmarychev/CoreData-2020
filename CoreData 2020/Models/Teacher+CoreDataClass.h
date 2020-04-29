@@ -1,5 +1,5 @@
 //
-//  Course+CoreDataClass.h
+//  Teacher+CoreDataClass.h
 //  CoreData 2020
 //
 //  Created by Dmitry Marchenko on 4/29/20.
@@ -10,14 +10,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Student, Teacher;
+@class Course;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Course : NSManagedObject
+@interface Teacher : NSManagedObject
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "Course+CoreDataProperties.h"
+#import "Teacher+CoreDataProperties.h"

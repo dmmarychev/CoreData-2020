@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRCTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class CourseInfoTableViewController;
-@class NSFetchedResultsController;
 @class Course;
 
 
-@interface CourseStudentsTableViewController : UITableViewController
+@interface CourseStudentsTableViewController : FRCTableViewController
 
-@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (weak, nonatomic) CourseInfoTableViewController *sourceController;
 @property (strong, nonatomic) Course *course;
 

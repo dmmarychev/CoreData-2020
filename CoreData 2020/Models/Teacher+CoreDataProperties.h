@@ -1,5 +1,5 @@
 //
-//  Student+CoreDataProperties.h
+//  Teacher+CoreDataProperties.h
 //  CoreData 2020
 //
 //  Created by Dmitry Marchenko on 4/29/20.
@@ -7,23 +7,22 @@
 //
 //
 
-#import "Student+CoreDataClass.h"
+#import "Teacher+CoreDataClass.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Student (CoreDataProperties)
+@interface Teacher (CoreDataProperties)
 
-+ (NSFetchRequest<Student *> *)fetchRequest;
++ (NSFetchRequest<Teacher *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *email;
 @property (nullable, nonatomic, copy) NSString *firstName;
 @property (nullable, nonatomic, copy) NSString *lastName;
 @property (nullable, nonatomic, retain) NSSet<Course *> *courses;
 
 @end
 
-@interface Student (CoreDataGeneratedAccessors)
+@interface Teacher (CoreDataGeneratedAccessors)
 
 - (void)addCoursesObject:(Course *)value;
 - (void)removeCoursesObject:(Course *)value;

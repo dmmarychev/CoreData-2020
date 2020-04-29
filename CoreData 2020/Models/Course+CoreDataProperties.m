@@ -2,7 +2,7 @@
 //  Course+CoreDataProperties.m
 //  CoreData 2020
 //
-//  Created by Dmitry Marchenko on 4/27/20.
+//  Created by Dmitry Marchenko on 4/29/20.
 //  Copyright © 2020 Dzmitry Marchanka. All rights reserved.
 //
 //
@@ -16,9 +16,9 @@
 }
 
 @dynamic industry;
-@dynamic subject;
 @dynamic name;
-@dynamic teacherFullName;
+@dynamic subject;
 @dynamic students;
+@dynamic teacher;
 
 @end

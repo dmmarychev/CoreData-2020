@@ -1,8 +1,8 @@
 //
-//  StudentsTableViewController.h
+//  TeachersTableViewController.h
 //  CoreData 2020
 //
-//  Created by Dmitry Marchenko on 4/26/20.
+//  Created by Dmitry Marchenko on 4/29/20.
 //  Copyright © 2020 Dzmitry Marchanka. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface StudentsTableViewController : FRCTableViewController
+@interface TeachersTableViewController : FRCTableViewController
 
 @end
 

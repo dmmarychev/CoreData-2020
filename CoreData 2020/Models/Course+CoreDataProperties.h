@@ -2,7 +2,7 @@
 //  Course+CoreDataProperties.h
 //  CoreData 2020
 //
-//  Created by Dmitry Marchenko on 4/27/20.
+//  Created by Dmitry Marchenko on 4/29/20.
 //  Copyright © 2020 Dzmitry Marchanka. All rights reserved.
 //
 //
@@ -17,10 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSFetchRequest<Course *> *)fetchRequest;
 
 @property (nullable, nonatomic, copy) NSString *industry;
-@property (nullable, nonatomic, copy) NSString *subject;
 @property (nullable, nonatomic, copy) NSString *name;
-@property (nullable, nonatomic, copy) NSString *teacherFullName;
+@property (nullable, nonatomic, copy) NSString *subject;
 @property (nullable, nonatomic, retain) NSSet<Student *> *students;
+@property (nullable, nonatomic, retain) Teacher *teacher;
 
 @end
 

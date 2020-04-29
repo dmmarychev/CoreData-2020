@@ -1,25 +1,25 @@
 //
-//  StudentsTableViewController.m
+//  CourseTeacherTableViewController.m
 //  CoreData 2020
 //
-//  Created by Dmitry Marchenko on 4/26/20.
+//  Created by Dmitry Marchenko on 4/29/20.
 //  Copyright © 2020 Dzmitry Marchanka. All rights reserved.
 //
 
-#import "StudentsTableViewController.h"
-#import "StudentInfoTableViewController.h"
+#import "CourseTeacherTableViewController.h"
+#import "TeacherInfoTableViewController.h"
+#import "Teacher+CoreDataClass.h"
 #import <CoreData/CoreData.h>
 #import "CoreDataManager.h"
-#import "Student+CoreDataClass.h"
+#import "Course+CoreDataClass.h"
 
-@interface StudentsTableViewController () <NSFetchedResultsControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface CourseTeacherTableViewController ()
 
 @property (strong, nonatomic) NSManagedObjectContext *context;
 
 @end
 
-
-@implementation StudentsTableViewController
+@implementation CourseTeacherTableViewController
 
 #pragma mark - UIView lifecycle
 
@@ -33,33 +33,25 @@
 }
 
 
-#pragma mark - Actions
-
-- (IBAction)editStudentsListButtonItemPressed:(UIBarButtonItem *)sender {
-    
-    sender.title = [sender.title isEqualToString:@"Edit"] ? @"Done" : @"Edit";
-    
-    [self.tableView setEditing:!self.tableView.editing animated:YES];
-}
-
-
 #pragma mark - UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    Student *currentStudent = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Teacher *currentTeacher = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
     cell.textLabel.text =
-    [NSString stringWithFormat:@"%@ %@", currentStudent.firstName, currentStudent.lastName];
+    [NSString stringWithFormat:@"%@ %@", currentTeacher.firstName, currentTeacher.lastName];
     
-    cell.detailTextLabel.text = currentStudent.email;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    if ([[self.fetchedResultsController objectAtIndexPath:indexPath] isEqual:self.course.teacher]) {
+        
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
     
     return cell;
 }
@@ -82,25 +74,19 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    StudentInfoTableViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"StudentInfoTableViewController"];
+    UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     
-    vc.student = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    if (selectedCell.accessoryType == UITableViewCellAccessoryNone) {
+        
+        selectedCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        
+        self.course.teacher = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    }
     
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return UITableViewCellEditingStyleDelete;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-                                            forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    Student *currentStudent = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    
-    [self.context deleteObject:currentStudent];
     [[CoreDataManager sharedManager] saveContext];
+    [self.sourceController.tableView reloadData];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -108,7 +94,7 @@
 
 - (void)initializeFetchedResultsController {
     
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Teacher"];
     
     NSSortDescriptor *lastNameSort = [NSSortDescriptor sortDescriptorWithKey:@"lastName" ascending:YES];
     
@@ -118,7 +104,6 @@
                                                                           managedObjectContext:self.context
                                                                             sectionNameKeyPath:nil
                                                                                      cacheName:nil]];
-    [[self fetchedResultsController] setDelegate:self];
     
     NSError *error = nil;
     if (![[self fetchedResultsController] performFetch:&error]) {

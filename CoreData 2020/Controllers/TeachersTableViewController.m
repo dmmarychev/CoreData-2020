@@ -1,25 +1,25 @@
 //
-//  StudentsTableViewController.m
+//  TeachersTableViewController.m
 //  CoreData 2020
 //
-//  Created by Dmitry Marchenko on 4/26/20.
+//  Created by Dmitry Marchenko on 4/29/20.
 //  Copyright © 2020 Dzmitry Marchanka. All rights reserved.
 //
 
-#import "StudentsTableViewController.h"
-#import "StudentInfoTableViewController.h"
+#import "TeachersTableViewController.h"
 #import <CoreData/CoreData.h>
 #import "CoreDataManager.h"
-#import "Student+CoreDataClass.h"
+#import "Teacher+CoreDataClass.h"
+#import "TeacherInfoTableViewController.h"
 
-@interface StudentsTableViewController () <NSFetchedResultsControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+
+@interface TeachersTableViewController () <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *context;
 
 @end
 
-
-@implementation StudentsTableViewController
+@implementation TeachersTableViewController
 
 #pragma mark - UIView lifecycle
 
@@ -47,7 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    Student *currentStudent = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Teacher *currentTeacher = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
@@ -56,9 +56,8 @@
     }
     
     cell.textLabel.text =
-    [NSString stringWithFormat:@"%@ %@", currentStudent.firstName, currentStudent.lastName];
+    [NSString stringWithFormat:@"%@ %@", currentTeacher.firstName, currentTeacher.lastName];
     
-    cell.detailTextLabel.text = currentStudent.email;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -82,9 +81,9 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    StudentInfoTableViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"StudentInfoTableViewController"];
+    TeacherInfoTableViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"TeacherInfoTableViewController"];
     
-    vc.student = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    vc.teacher = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -95,11 +94,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-                                            forRowAtIndexPath:(NSIndexPath *)indexPath {
+forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    Student *currentStudent = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Teacher *currentTeacher = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    [self.context deleteObject:currentStudent];
+    [self.context deleteObject:currentTeacher];
     [[CoreDataManager sharedManager] saveContext];
 }
 
@@ -108,9 +107,9 @@
 
 - (void)initializeFetchedResultsController {
     
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Teacher"];
     
-    NSSortDescriptor *lastNameSort = [NSSortDescriptor sortDescriptorWithKey:@"lastName" ascending:YES];
+    NSSortDescriptor *lastNameSort = [NSSortDescriptor sortDescriptorWithKey:@"firstName" ascending:YES];
     
     [request setSortDescriptors:@[lastNameSort]];
     
